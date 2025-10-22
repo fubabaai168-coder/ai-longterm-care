@@ -1,25 +1,31 @@
 {
-  "name": "long-term-care-app",
+  "name": "care-app-final",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.5.6",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "14.2.4", // <-- 確保這一行存在且版本號正確
+    "react": "^18",
+    "react-dom": "^18",
+    "lucide-react": "^0.395.0",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
+    "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.14",
-    "typescript": "^5"
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1", // <-- 確保這一行存在
+    "autoprefixer": "^10.4.19", // <-- 確保這一行存在
+    "@tailwindcss/postcss": "^4.0.0-alpha.13", // <-- 確保轉接器存在 (如果需要)
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4"
   }
 }
