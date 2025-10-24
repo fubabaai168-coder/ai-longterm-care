@@ -7,7 +7,12 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   reactStrictMode: true,
   webpack: (config) => {
-    config.resolve.alias["@"] = path.resolve(__dirname);
+    // 明確設定 alias
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@": path.resolve(__dirname, "./"),        // 根目錄
+      "@components": path.resolve(__dirname, "components"), // 新增 components 別名
+    };
     return config;
   },
 };
