@@ -14,10 +14,11 @@
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
-      {
-        "name": "next"
-      }
+      { "name": "next" }
     ],
+
+    // ⭐ 關鍵設定在這裡
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./*"]
     }
